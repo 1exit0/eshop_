@@ -1,0 +1,66 @@
+{% extends 'shared/layout.html' %}
+
+{% block content %}
+    <!-- start content -->
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="vh-100">
+                <div class="row gy-2 justify-content-center align-items-center h-100">
+                    <div class="col-md-6">
+                        <div class="content-box">
+                            <div class="container-fluid">
+                                <div class="title-panel">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="font-18">فرم ورود / عضویت</h6>
+                                        <a href="index.html">
+                                            <img src="static/site/image/logo.png" alt="" class="img-fluid" width="150">
+                                        </a>
+                                    </div>
+                                </div>
+                                <form action="" id="form-auth">
+                                    <div class="form-group step-username">
+                                        <label for="username" class="form-label font-18">شماره تلفن / ایمیل :</label>
+                                        <input type="text" name="username" id="username"
+                                               placeholder="ایمیل یا شماره تلفن خود را وارد کنید"
+                                               class="form-control py-4">
+                                    </div>
+                                    <div class="form-group step-passwd">
+                                        <label for="passwd" class="form-label font-18">کلمه عبور :</label>
+                                        <input type="password" name="passwd" id="passwd"
+                                               placeholder="رمز عبور خود را وارد کنید" class="form-control py-4">
+                                    </div>
+                                    <div class="form-group step-two py-4">
+                                        <a href="sending-code.html" class="main-color-one-color"> ورود با رمز یک بار
+                                            مصرف <i class="bi bi-chevron-left font-14 main-color-one-color"></i></a>
+                                    </div>
+                                    <div class="form-group step-one">
+                                        <button type="button" class="btn border-0 main-color-one-bg w-100 py-3">ورود /
+                                            ثبت نام
+                                        </button>
+                                    </div>
+                                    <div class="form-group step-two">
+                                        <button type="button" class="btn border-0 btnForm main-color-one-bg w-100 py-3">
+                                            تایید
+                                        </button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <a href=""
+                                           class="text-center main-color-one-color border-animate fromCenter py-2  d-inline-block">فراموشی
+                                            رمز عبور</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- این بی آر ها برای ایجاد اسکرول در صفحه هستند که تمام اجزای فرم به بدرستی نمایش داده شود و منوی موبایلی خودش را روی اجزای فرم نیندازد -->
+    <br><br><br><br><br><br><br><br>
+
+    <!-- end content -->
+
+{% endblock %}
